@@ -14,15 +14,15 @@
 /* --- Variables de Color y Fuentes --- */
 :root {
     --font-main: 'Inter', sans-serif;
-    --dark-bg: #050310; /* Un púrpura casi negro */
-    --mid-bg: #110E23;  /* Un púrpura oscuro para las tarjetas */
+    --dark-bg: #000000; /* Un púrpura casi negro */
+    --mid-bg: #000000;  /* Un púrpura oscuro para las tarjetas */
     --light-bg: #F4F4F7; /* Sección clara para contraste (Opcional, no usado aquí) */
     --text-light: #E0E0E0;
     --text-dark: #1D1D1F;
     --text-subtle: #8A8A9E;
     
     /* El toque de color "futurista" */
-    --primary-gradient: linear-gradient(90deg, #4F46E5, #D946EF);
+    --primary-gradient: linear-gradient(90deg, #2BD9D9, #C7D943);
     --secondary-gradient: linear-gradient(90deg, #38BDF8, #6366F1);
 }
 
@@ -59,9 +59,9 @@ a {
 
 /* --- 1. Navegación --- */
 .main-header {
-    background: rgba(5, 3, 16, 0.8); /* Fondo oscuro con transparencia */
+    background: #00000069; /* Fondo oscuro con transparencia */
     backdrop-filter: blur(10px); /* Efecto "glassmorphism" */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #000000;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -112,7 +112,7 @@ a {
 }
 .btn-primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(217, 70, 239, 0.4);
+    box-shadow: 0 0 20px #F272A1;
 }
 
 .btn-secondary {
@@ -120,7 +120,7 @@ a {
     color: var(--text-light);
 }
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #000000;
     border-color: var(--text-light);
 }
 
@@ -187,7 +187,7 @@ a {
     left: 50%;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle, rgba(79, 70, 229, 0.3), transparent 60%);
+    background: radial-gradient(circle, #2BD9D9, transparent 60%);
     transform: translate(-50%, -50%);
     filter: blur(100px);
     z-index: 1;
