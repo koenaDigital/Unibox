@@ -1,47 +1,332 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Koena – Próximamente</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="logo.png" type="image/png">
-    <meta name="description" content="Paradigma – Innovando la educación digital. Próximamente.">
-    <style>
-      body {
-        background-color: #000;
-        color: #fff;
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
-        overflow-x: hidden;
-      }
-      .fade-in {
-        opacity: 0;
-        animation: fadeIn 1.5s ease-in-out forwards;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-    </style>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+/* --- Variables de Color y Fuentes --- */
+:root {
+    --font-main: 'Inter', sans-serif;
+    --dark-bg: #050310; /* Un púrpura casi negro */
+    --mid-bg: #110E23;  /* Un púrpura oscuro para las tarjetas */
+    --light-bg: #F4F4F7; /* Sección clara para contraste (Opcional, no usado aquí) */
+    --text-light: #E0E0E0;
+    --text-dark: #1D1D1F;
+    --text-subtle: #8A8A9E;
+    
+    /* El toque de color "futurista" */
+    --primary-gradient: linear-gradient(90deg, #4F46E5, #D946EF);
+    --secondary-gradient: linear-gradient(90deg, #38BDF8, #6366F1);
+}
 
-  <body class="flex flex-col items-center justify-center min-h-screen text-center px-4">
-    <!-- LOGO -->
-    <img src="logo.png" alt="Koena Logo" class="w-32 md:w-48 mb-8 fade-in">
+/* --- Reseteo y Estilos Base --- */
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-    <!-- MENSAJE PRINCIPAL -->
-    <h1 class="text-3xl md:text-5xl font-semibold mb-4 fade-in" style="animation-delay: 0.3s">
-      Próximamente
-    </h1>
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-    <!-- <p class="text-lg md:text-xl text-gray-400 max-w-2xl fade-in" style="animation-delay: 0.6s">
-      .
-    </p> -->
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 600;
+}
 
-    <!-- ANIMACIÓN SUTIL -->
-    <div class="mt-12 fade-in" style="animation-delay: 0.9s">
-      <div class="w-12 h-12 border-4 border-gray-600 border-t-white rounded-full animate-spin mx-auto"></div>
-      <p class="text-sm text-gray-500 mt-4">Paradigma © 2025</p>
-    </div>
-  </body>
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* --- 1. Navegación --- */
+.main-header {
+    background: rgba(5, 3, 16, 0.8); /* Fondo oscuro con transparencia */
+    backdrop-filter: blur(10px); /* Efecto "glassmorphism" */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: var(--text-subtle);
+    font-weight: 400;
+}
+
+.main-nav a:hover {
+    color: var(--text-light);
+}
+
+/* --- Botones --- */
+.btn {
+    padding: 12px 24px;
+    border-radius: 50px; /* Píldora */
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(217, 70, 239, 0.4);
+}
+
+.btn-secondary {
+    border: 1px solid var(--text-subtle);
+    color: var(--text-light);
+}
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--text-light);
+}
+
+.btn-secondary-nav {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid var(--text-subtle);
+}
+.btn-secondary-nav:hover {
+    background-color: var(--text-light);
+    color: var(--dark-bg);
+    border-color: var(--text-light);
+}
+
+/* --- 2. Sección Héroe --- */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+    position: relative; /* Para el efecto de "brillo" */
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 750px;
+    z-index: 2; /* Por encima del brillo */
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+/* El texto con gradiente */
+.text-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: var(--text-subtle);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-weight: 300;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Efecto de "aura" o "brillo" */
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.3), transparent 60%);
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+    z-index: 1;
+}
+
+/* --- 3. Sección de Características --- */
+.features {
+    padding: 80px 0;
+    background-color: var(--dark-bg); /* Mantenemos el fondo oscuro */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.feature-card {
+    background: var(--mid-bg);
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--text-subtle);
+    font-size: 16px;
+}
+
+.text-gradient-alt {
+    background: var(--secondary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* --- 4. Pie de Página --- */
+.main-footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-subtle);
+}
+
+/* --- Responsividad Básica --- */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    /* Ocultamos la navegación de escritorio en móvil */
+    .main-nav {
+        display: none; 
+    }
+}
+</style>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">Koena</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Producto</a></li>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Precio</a></li>
+                    <li><a href="#" class="btn btn-secondary-nav">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    El Futuro es
+                    <span class="text-gradient">Luminoso</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Descubre Koena, la plataforma de próxima generación que redefine
+                    la interacción digital con inteligencia y velocidad.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary">Empieza Gratis</a>
+                    <a href="#" class="btn btn-secondary">Ver Demo →</a>
+                </div>
+            </div>
+            
+            <div class="hero-glow"></div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Construido para la Velocidad</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3><span class="text-gradient-alt">01.</span> Conectividad</h3>
+                        <p>Integración instantánea con todas tus herramientas. Sin fricción, solo flujo.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><span class="text-gradient-alt">02.</span> Inteligencia</h3>
+                        <p>Un núcleo de IA que aprende y se adapta a tu forma de trabajar.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><span class="text-gradient-alt">03.</span> Seguridad</h3>
+                        <p>Encriptación de nivel cuántico para mantener tus datos siempre seguros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Koena. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
