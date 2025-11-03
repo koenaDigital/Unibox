@@ -1,112 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koena</title>
-    <link rel="icon" type="image/x-icon" href="src/img/koena.png">
-    <link rel="stylesheet" href="/src/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">   
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome para íconos -->
-    <script src="https://kit.fontawesome.com/6c5a4d2b9d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koena</title>
+  <link rel="icon" type="image/x-icon" href="src/img/koena.png">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">   
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/a2d9a1f0a0.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="src/img/koena.png" alt="Koena" style="width: 10%; overflow: hidden;">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Producto</a></li>
-                    <li><a href="#">Características</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Precio</a></li>
-                    <li><a href="#" class="btn btn-secondary-nav">Iniciar Sesión</a></li>
-                </ul>
-            </nav>
+  <header class="main-header">
+    <div class="container">
+      <a href="#" class="logo"><img src="src/img/koena.png" alt="Koena" style="width: 10%; overflow: hidden;"></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Producto</a></li>
+          <li><a href="#">Características</a></li>
+          <li><a href="#">Precio</a></li>
+          <li><a href="#" class="btn btn-secondary-nav">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          El Futuro es
+          <span class="text-gradient">Luminoso</span>
+        </h1>
+        <p class="hero-subtitle">
+          Descubre Koena, la plataforma de próxima generación que redefine
+          la interacción digital con inteligencia y velocidad.
+        </p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary">Empieza Gratis</a>
+          <a href="#" class="btn btn-secondary">Ver Demo →</a>
         </div>
-    </header>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    El Futuro es <span class="text-gradient">Luminoso</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Descubre Koena, la plataforma de próxima generación que redefine
-                    la interacción digital con inteligencia y velocidad.
-                </p>
-                <div class="hero-cta">
-                    <a href="#" class="btn btn-primary">Empieza Gratis</a>
-                    <a href="#" class="btn btn-secondary">Ver Demo →</a>
-                </div>
-            </div>
-            <div class="hero-glow"></div>
-        </section>
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Construido para la Velocidad</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3><span class="text-gradient-alt">01.</span> Conectividad</h3>
+            <p>Integración instantánea con todas tus herramientas. Sin fricción, solo flujo.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="text-gradient-alt">02.</span> Inteligencia</h3>
+            <p>Un núcleo de IA que aprende y se adapta a tu forma de trabajar.</p>
+          </div>
+          <div class="feature-card">
+            <h3><span class="text-gradient-alt">03.</span> Seguridad</h3>
+            <p>Encriptación de nivel cuántico para mantener tus datos siempre seguros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- FEATURES -->
-        <section class="features">
-            <div class="container">
-                <h2 class="section-title">Construido para la Velocidad</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3><span class="text-gradient-alt">01.</span> Conectividad</h3>
-                        <p>Integración instantánea con todas tus herramientas. Sin fricción, solo flujo.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3><span class="text-gradient-alt">02.</span> Inteligencia</h3>
-                        <p>Un núcleo de IA que aprende y se adapta a tu forma de trabajar.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3><span class="text-gradient-alt">03.</span> Seguridad</h3>
-                        <p>Encriptación de nivel cuántico para mantener tus datos siempre seguros.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- SERVICIOS DE AUTOMATIZACIÓN -->
+    <section class="services" style="background-color:#0a0a0a; color:white; padding:80px 0;">
+      <div class="container">
+        <h2 class="section-title text-gradient">Servicios de Automatización</h2>
+        <p class="section-subtitle">Optimizamos tus procesos empresariales con soluciones inteligentes impulsadas por tecnología moderna.</p>
+        
+        <div class="services-grid" style="display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:3rem;">
 
-        <!-- NUEVA SECCIÓN: SERVICIOS DE AUTOMATIZACIÓN -->
-        <section class="services">
-            <div class="container">
-                <h2 class="section-title">Servicios de Automatización</h2>
-                <p class="section-subtitle">
-                    En Koena impulsamos la eficiencia mediante soluciones inteligentes que optimizan tus procesos y decisiones.
-                </p>
+          <!-- PYTHON -->
+          <div class="service-card" style="background:#111; border-radius:16px; padding:2rem; box-shadow:0 0 20px rgba(0,0,0,0.3);">
+            <div style="font-size:40px; color:#3776AB;"><i class="fa-brands fa-python"></i></div>
+            <h3>Automatización con Python</h3>
+            <p>
+              Desarrollamos scripts y bots personalizados para automatizar tareas repetitivas, integraciones entre sistemas y análisis de datos.
+              Utilizamos librerías avanzadas como <strong>Pandas</strong>, <strong>Requests</strong> y <strong>OpenPyXL</strong> para optimizar procesos.
+            </p>
+            <ul style="margin-top:1rem;">
+              <li>Automatización de reportes y correos.</li>
+              <li>Extracción y limpieza de datos.</li>
+              <li>Integración con APIs y sistemas internos.</li>
+            </ul>
+          </div>
 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="icon-container">
-                            <i class="fa-brands fa-python icon-gradient"></i>
-                        </div>
-                        <h3>Automatización con <span class="text-gradient">Python</span></h3>
-                        <p>Desarrollamos scripts y agentes automatizados que ahorran tiempo, reducen errores y aumentan tu productividad.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-container">
-                            <i class="fa-solid fa-chart-column icon-gradient"></i>
-                        </div>
-                        <h3>Analítica con <span class="text-gradient">Power BI</span></h3>
-                        <p>Transforma tus datos en decisiones. Diseñamos paneles interactivos y reportes inteligentes adaptados a tus KPIs.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-container">
-                            <i class="fa-solid fa-certificate icon-gradient"></i>
-                        </div>
-                        <h3>Certificaciones Profesionales</h3>
-                        <p>Nuestro equipo cuenta con certificaciones <strong>SCRUM</strong> e <strong>ITIL</strong>, garantizando metodologías ágiles y gestión eficiente del servicio.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-          <!-- NUEVA SECCIÓN: PRODUCTO SAAS -->
+          <!-- POWER BI -->
+          <div class="service-card" style="background:#111; border-radius:16px; padding:2rem; box-shadow:0 0 20px rgba(0,0,0,0.3);">
+            <div style="font-size:40px; color:#F2C811;"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Inteligencia de Negocio con Power BI</h3>
+            <p>
+              Transformamos tus datos en información visual y accionable. Creamos dashboards interactivos y reportes personalizados que impulsan la toma de decisiones.
+            </p>
+            <ul style="margin-top:1rem;">
+              <li>Dashboards en tiempo real.</li>
+              <li>Modelado de datos y KPIs.</li>
+              <li>Conexión con múltiples fuentes (SQL, Excel, APIs).</li>
+            </ul>
+          </div>
+
+          <!-- CERTIFICACIONES -->
+          <div class="service-card" style="background:#111; border-radius:16px; padding:2rem; box-shadow:0 0 20px rgba(0,0,0,0.3);">
+            <div style="font-size:40px; color:#00BFA6;"><i class="fa-solid fa-medal"></i></div>
+            <h3>Certificaciones y Mejores Prácticas</h3>
+            <p>
+              Nuestro equipo cuenta con certificaciones internacionales en <strong>SCRUM</strong> e <strong>ITIL</strong>, garantizando que cada proyecto siga estándares de calidad, eficiencia y mejora continua.
+            </p>
+            <ul style="margin-top:1rem;">
+              <li>Gestión ágil de proyectos (SCRUM).</li>
+              <li>Gestión de servicios TI (ITIL v4).</li>
+              <li>Procesos documentados y trazables.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- NUEVA SECCIÓN: PRODUCTO SAAS -->
         <section class="features" style="border-top: 1px solid rgba(255,255,255,0.05); background:#000;">
             <div class="container">
                 <h2 class="section-title">Koena SaaS</h2>
@@ -133,13 +149,13 @@
                 </div>
             </div>
         </section>
-    </main>
+  </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Koena. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 Koena. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
