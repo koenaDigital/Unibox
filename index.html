@@ -10,16 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome para íconos -->
+    <script src="https://kit.fontawesome.com/6c5a4d2b9d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header class="main-header">
         <div class="container">
-            <a href="#" class="logo"><img src="src/img/koena.png" alt="" style="width: 10%; overflow: hidden;"></a>
+            <a href="#" class="logo">
+                <img src="src/img/koena.png" alt="Koena" style="width: 10%; overflow: hidden;">
+            </a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">Producto</a></li>
                     <li><a href="#">Características</a></li>
+                    <li><a href="#">Servicios</a></li>
                     <li><a href="#">Precio</a></li>
                     <li><a href="#" class="btn btn-secondary-nav">Iniciar Sesión</a></li>
                 </ul>
@@ -28,11 +34,11 @@
     </header>
 
     <main>
+        <!-- HERO -->
         <section class="hero">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    El Futuro es
-                    <span class="text-gradient">Luminoso</span>
+                    El Futuro es <span class="text-gradient">Luminoso</span>
                 </h1>
                 <p class="hero-subtitle">
                     Descubre Koena, la plataforma de próxima generación que redefine
@@ -43,10 +49,10 @@
                     <a href="#" class="btn btn-secondary">Ver Demo →</a>
                 </div>
             </div>
-            
             <div class="hero-glow"></div>
         </section>
 
+        <!-- FEATURES -->
         <section class="features">
             <div class="container">
                 <h2 class="section-title">Construido para la Velocidad</h2>
@@ -62,6 +68,40 @@
                     <div class="feature-card">
                         <h3><span class="text-gradient-alt">03.</span> Seguridad</h3>
                         <p>Encriptación de nivel cuántico para mantener tus datos siempre seguros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: SERVICIOS DE AUTOMATIZACIÓN -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Servicios de Automatización</h2>
+                <p class="section-subtitle">
+                    En Koena impulsamos la eficiencia mediante soluciones inteligentes que optimizan tus procesos y decisiones.
+                </p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-container">
+                            <i class="fa-brands fa-python icon-gradient"></i>
+                        </div>
+                        <h3>Automatización con <span class="text-gradient">Python</span></h3>
+                        <p>Desarrollamos scripts y agentes automatizados que ahorran tiempo, reducen errores y aumentan tu productividad.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-chart-column icon-gradient"></i>
+                        </div>
+                        <h3>Analítica con <span class="text-gradient">Power BI</span></h3>
+                        <p>Transforma tus datos en decisiones. Diseñamos paneles interactivos y reportes inteligentes adaptados a tus KPIs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-certificate icon-gradient"></i>
+                        </div>
+                        <h3>Certificaciones Profesionales</h3>
+                        <p>Nuestro equipo cuenta con certificaciones <strong>SCRUM</strong> e <strong>ITIL</strong>, garantizando metodologías ágiles y gestión eficiente del servicio.</p>
                     </div>
                 </div>
             </div>
