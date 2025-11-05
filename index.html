@@ -1,161 +1,417 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koena</title>
-  <link rel="icon" type="image/x-icon" href="src/img/koena.png">
-  <link rel="stylesheet" href="/src/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">   
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Iconos -->
-  <script src="https://kit.fontawesome.com/a2d9a1f0a0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-  <header class="main-header">
-    <div class="container">
-      <a href="#" class="logo"><img src="src/img/koena.png" alt="Koena" style="width: 10%; overflow: hidden;"></a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">Producto</a></li>
-          <li><a href="#">Características</a></li>
-          <li><a href="#">Precio</a></li>
-          <!-- <li><a href="#" class="btn btn-secondary-nav">Iniciar Sesión</a></li> -->
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          El Futuro es
-          <span class="text-gradient">Luminoso</span>
-        </h1>
-        <p class="hero-subtitle">
-          Descubre Koena, la plataforma de próxima generación que redefine
-          la interacción digital con inteligencia y velocidad.
-        </p>
-        <div class="hero-cta">
-          <a href="#" class="btn btn-primary">Empieza Gratis</a>
-          <a href="#" class="btn btn-secondary">Ver Demo →</a>
-        </div>
-      </div>
-      <div class="hero-glow"></div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="features">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koena</title>
+    <link rel="icon" type="image/x-icon" href="src/img/koena.png" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos -->
+    <script
+      src="https://kit.fontawesome.com/a2d9a1f0a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
       <div class="container">
-        <h2 class="section-title">Construido para la Velocidad</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3><span class="text-gradient-alt">01.</span> Conectividad</h3>
-            <p>Integración instantánea con todas tus herramientas. Sin fricción, solo flujo.</p>
-          </div>
-          <div class="feature-card">
-            <h3><span class="text-gradient-alt">02.</span> Inteligencia</h3>
-            <p>Un núcleo de IA que aprende y se adapta a tu forma de trabajar.</p>
-          </div>
-          <div class="feature-card">
-            <h3><span class="text-gradient-alt">03.</span> Seguridad</h3>
-            <p>Encriptación de nivel cuántico para mantener tus datos siempre seguros.</p>
+        <a href="#" class="logo"
+          ><img
+            src="src/img/koena.png"
+            alt="Koena"
+            style="width: 10%; overflow: hidden"
+        /></a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Producto</a></li>
+            <li><a href="#">Características</a></li>
+            <li><a href="#">Precio</a></li>
+            <!-- <li><a href="#" class="btn btn-secondary-nav">Iniciar Sesión</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            El Futuro es
+            <span class="text-gradient">Luminoso</span>
+          </h1>
+          <p class="hero-subtitle">
+            Descubre Koena, la plataforma de próxima generación que redefine la
+            interacción digital con inteligencia y velocidad.
+          </p>
+          <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Empieza Gratis</a>
+            <a href="#" class="btn btn-secondary">Ver Demo →</a>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="hero-glow"></div>
+      </section>
 
-    <!-- SERVICIOS DE AUTOMATIZACIÓN -->
-    <section class="services" style="background-color:#0a0a0a; color:white; padding:80px 0;">
-      <div class="container">
-        <h2 class="section-title text-gradient">Servicios de Automatización</h2>
-        <p class="section-subtitle">Optimizamos tus procesos empresariales con soluciones inteligentes impulsadas por tecnología moderna.</p>
-        
-        <div class="services-grid" style="display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin-top:3rem;">
-
-          <!-- PYTHON -->
-          <div class="service-card" style="background:#111; border-radius:16px; padding:2rem; box-shadow:0 0 20px rgba(0,0,0,0.3);">
-            <div style="font-size:40px; color:#3776AB;"><i class="fa-brands fa-python"></i></div>
-            <h3>Automatización con Python</h3>
-            <p>
-              Desarrollamos scripts y bots personalizados para automatizar tareas repetitivas, integraciones entre sistemas y análisis de datos.
-              Utilizamos librerías avanzadas como <strong>Pandas</strong>, <strong>Requests</strong> y <strong>OpenPyXL</strong> para optimizar procesos.
-            </p>
-            <ul style="margin-top:1rem;">
-              <li>Automatización de reportes y correos.</li>
-              <li>Extracción y limpieza de datos.</li>
-              <li>Integración con APIs y sistemas internos.</li>
-            </ul>
-          </div>
-
-          <!-- POWER BI -->
-          <div class="service-card" style="background:#111; border-radius:16px; padding:2rem; box-shadow:0 0 20px rgba(0,0,0,0.3);">
-            <div style="font-size:40px; color:#F2C811;"><i class="fa-solid fa-chart-line"></i></div>
-            <h3>Inteligencia de Negocio con Power BI</h3>
-            <p>
-              Transformamos tus datos en información visual y accionable. Creamos dashboards interactivos y reportes personalizados que impulsan la toma de decisiones.
-            </p>
-            <ul style="margin-top:1rem;">
-              <li>Dashboards en tiempo real.</li>
-              <li>Modelado de datos y KPIs.</li>
-              <li>Conexión con múltiples fuentes (SQL, Excel, APIs).</li>
-            </ul>
-          </div>
-
-          <!-- CERTIFICACIONES -->
-          <div class="service-card" style="background:#111; border-radius:16px; padding:2rem; box-shadow:0 0 20px rgba(0,0,0,0.3);">
-            <div style="font-size:40px; color:#00BFA6;"><i class="fa-solid fa-medal"></i></div>
-            <h3>Certificaciones y Mejores Prácticas</h3>
-            <p>
-              Nuestro equipo cuenta con certificaciones internacionales en <strong>SCRUM</strong> e <strong>ITIL</strong>, garantizando que cada proyecto siga estándares de calidad, eficiencia y mejora continua.
-            </p>
-            <ul style="margin-top:1rem;">
-              <li>Gestión ágil de proyectos (SCRUM).</li>
-              <li>Gestión de servicios TI (ITIL v4).</li>
-              <li>Procesos documentados y trazables.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-      <!-- NUEVA SECCIÓN: PRODUCTO SAAS -->
-        <section class="features" style="border-top: 1px solid rgba(255,255,255,0.05); background:#000;">
-            <div class="container">
-                <h2 class="section-title">Koena SaaS</h2>
-                <p class="section-subtitle" style="text-align:center; color:var(--text-subtle); max-width:700px; margin:0 auto 3rem;">
-                    Próximamente: nuestra plataforma <strong>Koena SaaS</strong>, diseñada para automatizar y gestionar flujos empresariales con agentes inteligentes y visualizaciones en tiempo real.
-                </p>
-
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fa-solid fa-cloud icon-gradient" style="font-size:3rem;"></i>
-                        <h3>Infraestructura en la Nube</h3>
-                        <p>Segura, escalable y disponible 24/7. Tus procesos automatizados desde cualquier lugar del mundo.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fa-solid fa-robot icon-gradient" style="font-size:3rem;"></i>
-                        <h3>Agentes Inteligentes</h3>
-                        <p>Asistentes digitales que aprenden de tus operaciones y ejecutan tareas de manera autónoma.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fa-solid fa-chart-line icon-gradient" style="font-size:3rem;"></i>
-                        <h3>Paneles Dinámicos</h3>
-                        <p>Visualiza en tiempo real el rendimiento de tus equipos, flujos y métricas clave.</p>
-                    </div>
-                </div>
+      <!-- FEATURES -->
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title">Construido para la Velocidad</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3><span class="text-gradient-alt">01.</span> Conectividad</h3>
+              <p>
+                Integración instantánea con todas tus herramientas. Sin
+                fricción, solo flujo.
+              </p>
             </div>
-        </section>
-  </main>
+            <div class="feature-card">
+              <h3><span class="text-gradient-alt">02.</span> Inteligencia</h3>
+              <p>
+                Un núcleo de IA que aprende y se adapta a tu forma de trabajar.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3><span class="text-gradient-alt">03.</span> Seguridad</h3>
+              <p>
+                Encriptación de nivel cuántico para mantener tus datos siempre
+                seguros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer class="main-footer">
-    <div class="container">
-      <p>&copy; 2025 Koena. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+      <!-- SERVICIOS DE AUTOMATIZACIÓN -->
+      <section
+        class="services"
+        style="background-color: #0a0a0a; color: white; padding: 80px 0"
+      >
+        <div class="container">
+          <h2 class="section-title text-gradient">
+            Servicios de Automatización
+          </h2>
+          <p class="section-subtitle">
+            Optimizamos tus procesos empresariales con soluciones inteligentes
+            impulsadas por tecnología moderna.
+          </p>
 
-</body>
+          <div
+            class="services-grid"
+            style="
+              display: grid;
+              gap: 2rem;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              margin-top: 3rem;
+            "
+          >
+            <!-- PYTHON -->
+            <div
+              class="service-card"
+              style="
+                background: #111;
+                border-radius: 16px;
+                padding: 2rem;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+              "
+            >
+              <div style="font-size: 40px; color: #3776ab">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <h3>Automatización con Python</h3>
+              <p>
+                Desarrollamos scripts y bots personalizados para automatizar
+                tareas repetitivas, integraciones entre sistemas y análisis de
+                datos. Utilizamos librerías avanzadas como
+                <strong>Pandas</strong>, <strong>Requests</strong> y
+                <strong>OpenPyXL</strong> para optimizar procesos.
+              </p>
+              <ul style="margin-top: 1rem">
+                <li>Automatización de reportes y correos.</li>
+                <li>Extracción y limpieza de datos.</li>
+                <li>Integración con APIs y sistemas internos.</li>
+              </ul>
+            </div>
+
+            <!-- POWER BI -->
+            <div
+              class="service-card"
+              style="
+                background: #111;
+                border-radius: 16px;
+                padding: 2rem;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+              "
+            >
+              <div style="font-size: 40px; color: #f2c811">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3>Inteligencia de Negocio con Power BI</h3>
+              <p>
+                Transformamos tus datos en información visual y accionable.
+                Creamos dashboards interactivos y reportes personalizados que
+                impulsan la toma de decisiones.
+              </p>
+              <ul style="margin-top: 1rem">
+                <li>Dashboards en tiempo real.</li>
+                <li>Modelado de datos y KPIs.</li>
+                <li>Conexión con múltiples fuentes (SQL, Excel, APIs).</li>
+              </ul>
+            </div>
+
+            <!-- CERTIFICACIONES -->
+            <div
+              class="service-card"
+              style="
+                background: #111;
+                border-radius: 16px;
+                padding: 2rem;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+              "
+            >
+              <div style="font-size: 40px; color: #00bfa6">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+              <h3>Certificaciones y Mejores Prácticas</h3>
+              <p>
+                Nuestro equipo cuenta con certificaciones internacionales en
+                <strong>SCRUM</strong> e <strong>ITIL</strong>, garantizando que
+                cada proyecto siga estándares de calidad, eficiencia y mejora
+                continua.
+              </p>
+              <ul style="margin-top: 1rem">
+                <li>Gestión ágil de proyectos (SCRUM).</li>
+                <li>Gestión de servicios TI (ITIL v4).</li>
+                <li>Procesos documentados y trazables.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- AUTOMATIZACIÓN CON AGENTES E IA -->
+      <section
+        class="automation"
+        style="
+          background: #000;
+          color: white;
+          padding: 120px 0;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+        "
+      >
+        <div
+          class="container"
+          style="
+            max-width: 1100px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+          "
+        >
+          <h2
+            style="
+              font-size: 2.8rem;
+              font-weight: 700;
+              letter-spacing: -0.5px;
+              background: linear-gradient(90deg, #ffffff, #a1a1a1);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              margin-bottom: 1.5rem;
+            "
+          >
+            Automatización Inteligente
+          </h2>
+          <p
+            style="
+              font-size: 1.2rem;
+              color: #ccc;
+              max-width: 750px;
+              margin: 0 auto 4rem;
+            "
+          >
+            Integra, conecta y acelera tus flujos de trabajo con
+            automatizaciones visuales y agentes inteligentes impulsados por IA.
+          </p>
+
+          <div
+            style="
+              display: grid;
+              gap: 3rem;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              align-items: start;
+            "
+          >
+            <!-- AUTOMATIZACIÓN CON AGENTES (N8N) -->
+            <div
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 20px;
+                padding: 3rem 2rem;
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+                transition: all 0.4s ease;
+              "
+            >
+              <div style="font-size: 3rem; color: #38bdf8; margin-bottom: 1rem">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <h3
+                style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem"
+              >
+                Automatización con Agentes
+              </h3>
+              <p style="color: #bbb; line-height: 1.6">
+                Diseñamos flujos de trabajo inteligentes con
+                <strong>n8n</strong>, una plataforma de automatización visual
+                que conecta tus aplicaciones favoritas sin código. Crea agentes
+                que ejecutan procesos automáticamente, integrando APIs, correos,
+                bases de datos y más.
+              </p>
+              <ul
+                style="
+                  list-style: none;
+                  margin-top: 1.5rem;
+                  color: #ccc;
+                  padding: 0;
+                "
+              >
+                <li>⚙️ Conexiones entre sistemas (ERP, CRM, API).</li>
+                <li>🔁 Automatización de tareas repetitivas.</li>
+                <li>📩 Envíos automáticos de correos y reportes.</li>
+              </ul>
+            </div>
+
+            <!-- AUTOMATIZACIÓN CON IA -->
+            <div
+              style="
+                background: linear-gradient(180deg, #111, #000);
+                border-radius: 20px;
+                padding: 3rem 2rem;
+                box-shadow: 0 0 40px rgba(255, 255, 255, 0.07);
+                transition: all 0.4s ease;
+              "
+            >
+              <div style="font-size: 3rem; color: #00e5ff; margin-bottom: 1rem">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3
+                style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem"
+              >
+                Automatización con IA
+              </h3>
+              <p style="color: #bbb; line-height: 1.6">
+                Integramos modelos de Inteligencia Artificial para que tus
+                sistemas no solo reaccionen, sino que piensen. Desde análisis
+                predictivos hasta generación automática de contenido,
+                potenciamos tus flujos con capacidades cognitivas avanzadas.
+              </p>
+              <ul
+                style="
+                  list-style: none;
+                  margin-top: 1.5rem;
+                  color: #ccc;
+                  padding: 0;
+                "
+              >
+                <li>🧠 Agentes de IA personalizados (GPT, Llama, Claude).</li>
+                <li>📊 Análisis predictivo y clasificación automática.</li>
+                <li>💬 Chatbots y asistentes inteligentes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glow Apple-style background -->
+        <div
+          style="
+            position: absolute;
+            top: -20%;
+            left: -10%;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(
+              circle at center,
+              rgba(255, 255, 255, 0.1) 0%,
+              transparent 70%
+            );
+            filter: blur(120px);
+            z-index: 1;
+          "
+        ></div>
+      </section>
+
+      <!-- NUEVA SECCIÓN: PRODUCTO SAAS -->
+      <section
+        class="features"
+        style="
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+          background: #000;
+        "
+      >
+        <div class="container">
+          <h2 class="section-title">Koena SaaS</h2>
+          <p
+            class="section-subtitle"
+            style="
+              text-align: center;
+              color: var(--text-subtle);
+              max-width: 700px;
+              margin: 0 auto 3rem;
+            "
+          >
+            Próximamente: nuestra plataforma <strong>Koena SaaS</strong>,
+            diseñada para automatizar y gestionar flujos empresariales con
+            agentes inteligentes y visualizaciones en tiempo real.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <i
+                class="fa-solid fa-cloud icon-gradient"
+                style="font-size: 3rem"
+              ></i>
+              <h3>Infraestructura en la Nube</h3>
+              <p>
+                Segura, escalable y disponible 24/7. Tus procesos automatizados
+                desde cualquier lugar del mundo.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i
+                class="fa-solid fa-robot icon-gradient"
+                style="font-size: 3rem"
+              ></i>
+              <h3>Agentes Inteligentes</h3>
+              <p>
+                Asistentes digitales que aprenden de tus operaciones y ejecutan
+                tareas de manera autónoma.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i
+                class="fa-solid fa-chart-line icon-gradient"
+                style="font-size: 3rem"
+              ></i>
+              <h3>Paneles Dinámicos</h3>
+              <p>
+                Visualiza en tiempo real el rendimiento de tus equipos, flujos y
+                métricas clave.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 Koena. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
