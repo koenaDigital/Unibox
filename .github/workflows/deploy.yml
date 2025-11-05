@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Despliegue a producción
+    runs-on: ubuntu-latest
+    steps:
+    - name: ejecutando remoto ssh
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        port: 22
+        script: |
+          cd /var/www/unibox.koena.mx/Unibox          
+          git pull
