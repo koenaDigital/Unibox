@@ -298,3 +298,10 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.img-automatizacion{
+    width: 50%;
+}
+.ollama{
+    width: 20%;
+}
